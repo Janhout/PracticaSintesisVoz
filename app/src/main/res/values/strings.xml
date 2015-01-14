@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PruebasSintesisVoz</string>
+    <string name="error_bot">El bot ha fallado</string>
+    <string name="error_reconocimiento">No se ha podido reconocer nada</string>
+    <string name="error_sintesis">Síntesis de voz no disponible. REPRODUCTOR</string>
+    <string name="error_sintesis2">Síntesis de voz no disponible. TTS</string>
+    <string name="error_procesar">Error al procesar. Intentar de nuevo</string>
+    <string name="error_internet">Comprueba tu conexión a Internet. Aplicación cerrada</string>
+    <string name="no_internet">El bot no tiene acceso a internet</string>
+    <string name="habla">Habla ahora</string>
+    <string name="hablar">Hablar</string>
+    <string name="reproducir">Contestar</string>
+    <string name="conv_esp">Conversación en español</string>
+    <string name="conv_eng">Conversación en ingles</string>
+    <string name="escribe_frase">Escribe tu frase</string>
+    <string name="esp">es-ES</string>
+    <string name="eng">en-EN</string>
+    <string name="pensando">Procesando el texto</string>
+    <string name="aumentar">+</string>
+    <string name="reducir">-</string>
+    <string name="rate">Speech Rate</string>
+    <string name="pitch">Pitch</string>
+
+</resources>

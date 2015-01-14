@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Principal">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/grupo_idioma">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conv_eng"
+            android:id="@+id/rb_eng"
+            android:onClick="cambiarIdioma"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conv_esp"
+            android:id="@+id/rb_esp"
+            android:onClick="cambiarIdioma"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo_rate"
+        android:layout_below="@id/grupo_idioma"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reducir"
+            android:onClick="cambiarRate"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rate"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aumentar"
+            android:onClick="cambiarRate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grupo_pitch"
+        android:layout_below="@id/grupo_rate"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reducir"
+            android:onClick="cambiarPitch"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pitch"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/aumentar"
+            android:onClick="cambiarPitch"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/grupo_pitch"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="35dp"
+        android:minLines="2"
+        android:textSize="25sp"
+        android:onClick="limpiarEt"
+        android:hint="@string/escribe_frase"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reproducir"
+            android:id="@+id/boton_reproducir"
+            android:onClick="reproducir"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hablar"
+            android:id="@+id/boton_hablar"
+            android:onClick="hablar"
+            android:layout_below="@id/boton_reproducir"
+            android:layout_weight="1"
+            />
+        </LinearLayout>
+</RelativeLayout>
